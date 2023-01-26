@@ -17,8 +17,9 @@ import HospitalOrganReq from "../components/HospitalOrganReq";
 import RequestOb from "../components/RequestOb";
 import Request from "../components/Request";
 import RequestPage from "../components/RequestPage";
+import Logout from "../components/Logout";
 import HospitalDetailsubmit from "../components/HospitalDetailsubmit";
-import ChatPage from "../components/ChatPage/ChatPage";
+
 // import  SignUp  from "../components/CreateAccount";
 
 const Stack = createNativeStackNavigator();
@@ -33,8 +34,7 @@ export default function Routes() {
       <Stack.Navigator initialRouteName="Landing">
         <Stack.Screen
           name="Landing"
-          options={{ headerShown: false }}
-          component={ChatPage}
+          options={{ headerShown: false }
         />
         <Stack.Screen
           name="First"
@@ -98,6 +98,16 @@ export default function Routes() {
           name="organdetailssend"
           options={{ headerShown: false }}
           component={HospitalDetailsubmit}
+        />
+        <Stack.Screen
+          name="Logout"
+          options={{ headerShown: false }}
+          component={Logout}
+        />
+        <Stack.Screen
+          name="confirm"
+          options={{ headerShown: false }}
+          component={Confirmed}
         />
       </Stack.Navigator>
     </NavigationContainer>
