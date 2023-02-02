@@ -19,7 +19,8 @@ import Request from "../components/Request";
 import RequestPage from "../components/RequestPage";
 import Logout from "../components/Logout";
 import HospitalDetailsubmit from "../components/HospitalDetailsubmit";
-
+import Confirmed from "../components/Confirmed";
+// import AzureMap from "../components/Azuremap";
 // import  SignUp  from "../components/CreateAccount";
 
 const Stack = createNativeStackNavigator();
@@ -34,7 +35,8 @@ export default function Routes() {
       <Stack.Navigator initialRouteName="Landing">
         <Stack.Screen
           name="Landing"
-          options={{ headerShown: false }
+          options={{ headerShown: false }}
+          component={LandingPage}
         />
         <Stack.Screen
           name="First"
